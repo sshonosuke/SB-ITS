@@ -1,2 +1,4 @@
 # SB-ITS
-Efficient Screening of Predictive Biomarkers for Individual Treatment Selection.    https://arxiv.org/abs/1905.01582
+This package implements an effieicnt screening methods of predictive biomarkers for individual treatment selection via optimal discovery procedure.  
+
+
