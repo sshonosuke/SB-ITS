@@ -119,14 +119,14 @@ q-value method
 ```{r}
 p <- dim(X)[2]
 Stat <- fit.N$Est
-qv1 <- 2*( 1-pnorm( abs(Stat[,1]/Stat[,2]) ) )   
-qv2 <- c()
+PV1 <- 2*( 1-pnorm( abs(Stat[,1]/Stat[,2]) ) )   
+PV2 <- c()
 for(k in 1:p){
   f1 <- coxph( Surv(Y[Tr==1],Event[Tr==1])~X[Tr==1,k]+Z[Tr==1,] )
   f2 <- coxph( Surv(Y[Tr==-1],Event[Tr==-1])~X[Tr==-1,k]+Z[Tr==-1,] )
   a1 <- summary(f1)$coefficients[1] - summary(f2)$coefficients[1]
   a2 <- sqrt( summary(f1)$coefficients[1,3]^2 + summary(f2)$coefficients[1,3]^2 )
-  qv2[k] <- 2*( 1-pnorm(abs(a1/a2)) )
+  PV2[k] <- 2*( 1-pnorm(abs(a1/a2)) )
 }
 
 qv1 <- list()
