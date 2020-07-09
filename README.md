@@ -1,7 +1,7 @@
 # SB-ITS
 This package implements effieicnt screening methods of predictive biomarkers for individual treatment selection via optimal discovery procedure, as proposed by the following papers.
 
-Sugasawa, S. and Noma, H. (2020). Efficient Screening of Predictive Biomarkers for Individual Treatment Selection. (https://arxiv.org/abs/1905.01582)
+Sugasawa, S. and Noma, H. (2020). Efficient Screening of Predictive Biomarkers for Individual Treatment Selection. *Biometrics*, to appear (https://arxiv.org/abs/1905.01582)
 
 Functions are implemented in HTEODP-bin-function.R and HTEODP-surv-function.R available in the repository.
 
